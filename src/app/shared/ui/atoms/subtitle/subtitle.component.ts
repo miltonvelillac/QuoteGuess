@@ -13,6 +13,6 @@ import { AppTextAlign } from '../title/title.component';
 })
 export class SubtitleComponent {
   readonly id = input.required<string>();
-  readonly content = input('');
+  readonly label = input('');
   readonly align = input<AppTextAlign>('left');
 }

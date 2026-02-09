@@ -13,7 +13,7 @@ export type AppTextAlign = 'left' | 'center' | 'right';
 })
 export class TitleComponent {
   readonly id = input.required<string>();
-  readonly content = input('');
+  readonly label = input('');
   readonly level = input<1 | 2 | 3>(2);
   readonly align = input<AppTextAlign>('left');
 }

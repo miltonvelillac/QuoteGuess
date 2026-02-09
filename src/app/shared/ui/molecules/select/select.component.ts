@@ -2,6 +2,9 @@ import { ChangeDetectionStrategy, Component, computed, input, output, signal } f
 
 import { SortPipe } from '../../../pipes';
 import { IconComponent } from '../../atoms/icon';
+import { IconsEnum } from 'src/app/core/enums/icons.enum';
+import { TitleComponent } from '../../atoms/title';
+import { SubtitleComponent } from '../../atoms/subtitle';
 
 export interface SelectOption {
   id: string;
@@ -15,10 +18,17 @@ export interface SelectOption {
   templateUrl: './select.component.html',
   styleUrls: ['./select.component.scss'],
   standalone: true,
-  imports: [SortPipe, IconComponent],
+  imports: [
+    IconComponent,
+    TitleComponent,
+    SubtitleComponent,
+    SortPipe,
+  ],
   changeDetection: ChangeDetectionStrategy.OnPush,
 })
 export class SelectComponent {
+  readonly icons = IconsEnum;
+
   readonly id = input.required<string>();
   readonly options = input<SelectOption[]>([]);
   readonly selectedOptionId = input<string | null>(null);

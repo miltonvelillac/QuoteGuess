@@ -14,14 +14,22 @@
         </div>
       }
       <div>
-        <div class="duel-select__title">{{ selectedOption()?.title || 'Select an option' }}</div>
-        <div class="duel-select__subtitle">{{ selectedOption()?.subtitle || 'No selection yet' }}</div>
+        <app-title-component
+          class="duel-select__title"
+          [id]="id() + '__title'"
+          [label]="selectedOption()?.title || 'Select an option'"
+        />
+        <app-subtitle-component
+          class="duel-select__subtitle"
+          [id]="id() + '__subtitle'"
+          [label]="selectedOption()?.subtitle || 'No selection yet'"
+        />        
       </div>
     </div>
 
     <app-icon-component
       [id]="id() + '-arrow-icon'"
-      name="chevron-expand-outline"
+      [name]="icons.chevronExpand"
       color="medium"
     ></app-icon-component>
   </div>

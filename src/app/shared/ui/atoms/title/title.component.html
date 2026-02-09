@@ -6,7 +6,7 @@
       [attr.data-testid]="id()"
       [ngClass]="'app-title--' + align()"
     >
-      {{ content() }}
+      {{ label() }}
     </h1>
   }
   @case (3) {
@@ -16,7 +16,7 @@
       [attr.data-testid]="id()"
       [ngClass]="'app-title--' + align()"
     >
-      {{ content() }}
+      {{ label() }}
     </h3>
   }
   @default {
@@ -26,7 +26,7 @@
       [attr.data-testid]="id()"
       [ngClass]="'app-title--' + align()"
     >
-      {{ content() }}
+      {{ label() }}
     </h2>
   }
 }
