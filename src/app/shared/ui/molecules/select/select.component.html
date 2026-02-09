@@ -1,0 +1,58 @@
+<div
+    class="duel-select"
+    [attr.data-testid]="id() + '-selected'"
+    (click)="toggleOpen()"
+  >
+    <div class="duel-select__selected-left">
+      @if (selectedOption()?.iconName) {
+        <div class="duel-select__icon-wrap">
+          <app-icon-component
+            [id]="id() + '-selected-icon'"
+            [name]="selectedOption()?.iconName ?? 'sparkles'"
+            color="primary"
+          ></app-icon-component>
+        </div>
+      }
+      <div>
+        <div class="duel-select__title">{{ selectedOption()?.title || 'Select an option' }}</div>
+        <div class="duel-select__subtitle">{{ selectedOption()?.subtitle || 'No selection yet' }}</div>
+      </div>
+    </div>
+
+    <app-icon-component
+      [id]="id() + '-arrow-icon'"
+      name="chevron-expand-outline"
+      color="medium"
+    ></app-icon-component>
+  </div>
+
+  @if (isOpen()) {
+    <div class="duel-select__dropdown" [attr.data-testid]="id() + '-dropdown'">
+      <input
+        class="duel-select__search"
+        [attr.data-testid]="id() + '-search'"
+        type="text"
+        [placeholder]="searchPlaceholder()"
+        [value]="searchTerm()"
+        (input)="onSearchInput($event)"
+      />
+
+      <div class="duel-select__list">
+        @for (option of filteredOptions() | sortBy: 'title' : 'asc'; track option.id) {
+          <button
+            type="button"
+            class="duel-select__option"
+            [attr.data-testid]="id() + '-option-' + option.id"
+            (click)="onOptionClick(option.id)"
+          >
+            <div class="duel-select__option-title">{{ option.title }}</div>
+            @if (option.subtitle) {
+              <div class="duel-select__option-subtitle">{{ option.subtitle }}</div>
+            }
+          </button>
+        } @empty {
+          <div class="duel-select__empty" [attr.data-testid]="id() + '-empty'">No results</div>
+        }
+      </div>
+    </div>
+}

@@ -9,8 +9,8 @@
     <strong>Atoms: Button</strong>
     <p>Primary and secondary variants ready.</p>
     <div class="button-row">
-      <app-button variant="primary">Primary</app-button>
-      <app-button variant="secondary">Secondary</app-button>
+      <app-button id="primary" variant="primary">Primary</app-button>
+      <app-button id="secondary" variant="secondary">Secondary</app-button>
     </div>
     <div class="icon-row">
       <app-icon-component id="icon-star" name="star" color="primary"></app-icon-component>
@@ -21,6 +21,15 @@
       <app-card-component id="demo-card" title="Molecule: Card" subtitle="Reusable surface component">
         This card is ready to be reused in game, stats, and settings views.
       </app-card-component>
+    </div>
+    <div class="select-row">
+      <app-select-component
+        id="duel-slot-a"
+        [options]="demoOptions"
+        [selectedOptionId]="selectedOptionId()"
+        searchPlaceholder="Filter options..."
+        (optionChanged)="onOptionChange($event)"
+      ></app-select-component>
     </div>
   </div>
 </ion-content>

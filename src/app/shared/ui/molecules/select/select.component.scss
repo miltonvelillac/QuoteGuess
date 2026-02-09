@@ -1,0 +1,98 @@
+:host {
+  display: block;
+}
+
+.duel-select {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 12px;
+  width: 100%;
+  padding: 18px;
+  border-radius: 26px;
+  border: 2px dashed rgba(100, 122, 160, 0.45);
+  background: #091833;
+  color: #ebf2ff;
+  cursor: pointer;
+}
+
+.duel-select__selected-left {
+  display: flex;
+  align-items: center;
+  gap: 14px;
+}
+
+.duel-select__icon-wrap {
+  width: 52px;
+  height: 52px;
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  border-radius: 50%;
+  background: radial-gradient(circle at 30% 25%, #1856a1, #102548);
+}
+
+.duel-select__title {
+  font-size: 1.1rem;
+  font-weight: 700;
+}
+
+.duel-select__subtitle {
+  margin-top: 2px;
+  color: #7f93ba;
+}
+
+.duel-select__dropdown {
+  margin-top: 12px;
+  padding: 12px;
+  border-radius: 16px;
+  border: 1px solid rgba(78, 115, 182, 0.35);
+  background: #0a162e;
+}
+
+.duel-select__search {
+  width: 100%;
+  border: 1px solid rgba(116, 141, 187, 0.3);
+  border-radius: 12px;
+  background: #0a1b39;
+  color: #ebf2ff;
+  padding: 10px 12px;
+  outline: none;
+}
+
+.duel-select__list {
+  margin-top: 10px;
+  max-height: 220px;
+  overflow: auto;
+}
+
+.duel-select__option {
+  display: block;
+  width: 100%;
+  margin: 0;
+  padding: 10px 8px;
+  border: 0;
+  border-radius: 10px;
+  background: transparent;
+  color: #ebf2ff;
+  text-align: left;
+}
+
+.duel-select__option:hover {
+  background: rgba(53, 83, 136, 0.25);
+}
+
+.duel-select__option-title {
+  font-weight: 600;
+}
+
+.duel-select__option-subtitle {
+  margin-top: 2px;
+  color: #7f93ba;
+  font-size: 0.9rem;
+}
+
+.duel-select__empty {
+  padding: 12px 6px;
+  color: #7f93ba;
+}
