@@ -22,6 +22,9 @@ log.txt
 /www
 /platforms
 /plugins
+/android
+/ios
+.eslintcache
 
 # Compiled output
 /dist
@@ -33,6 +36,8 @@ log.txt
 /node_modules
 npm-debug.log
 yarn-error.log
+pnpm-debug.log
+.npmrc
 
 # IDEs and editors
 .idea/
@@ -64,6 +69,8 @@ yarn-error.log
 /libpeerconnection.log
 testem.log
 /typings
+/cuote-guess
+/quote-duel
 
 # System files
 .DS_Store
