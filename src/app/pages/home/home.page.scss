@@ -25,3 +25,22 @@
 #container a {
   text-decoration: none;
 }
+
+.button-row {
+  display: flex;
+  gap: 12px;
+  justify-content: center;
+  margin-top: 16px;
+}
+
+.icon-row {
+  display: flex;
+  gap: 14px;
+  justify-content: center;
+  margin-top: 18px;
+}
+
+.card-row {
+  margin: 20px auto 0;
+  max-width: 380px;
+}

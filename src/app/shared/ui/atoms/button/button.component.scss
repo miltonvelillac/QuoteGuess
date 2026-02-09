@@ -1,0 +1,15 @@
+:host {
+  display: inline-block;
+}
+
+.app-button {
+  --border-radius: 12px;
+  --padding-top: 12px;
+  --padding-bottom: 12px;
+  font-weight: 600;
+  text-transform: none;
+}
+
+.app-button--secondary {
+  --border-width: 2px;
+}

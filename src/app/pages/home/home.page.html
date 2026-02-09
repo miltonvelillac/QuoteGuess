@@ -1,20 +1,26 @@
 <ion-header [translucent]="true">
   <ion-toolbar>
-    <ion-title>
-      Blank
-    </ion-title>
+    <ion-title>Quote Guess</ion-title>
   </ion-toolbar>
 </ion-header>
 
 <ion-content [fullscreen]="true">
-  <ion-header collapse="condense">
-    <ion-toolbar>
-      <ion-title size="large">Blank</ion-title>
-    </ion-toolbar>
-  </ion-header>
-
   <div id="container">
-    <strong>Ready to create an app?</strong>
-    <p>Start with Ionic <a target="_blank" rel="noopener noreferrer" href="https://ionicframework.com/docs/components">UI Components</a></p>
+    <strong>Atoms: Button</strong>
+    <p>Primary and secondary variants ready.</p>
+    <div class="button-row">
+      <app-button variant="primary">Primary</app-button>
+      <app-button variant="secondary">Secondary</app-button>
+    </div>
+    <div class="icon-row">
+      <app-icon-component id="icon-star" name="star" color="primary"></app-icon-component>
+      <app-icon-component id="icon-check" name="checkmark-circle" color="secondary"></app-icon-component>
+      <app-icon-component id="icon-settings" name="settings" color="medium"></app-icon-component>
+    </div>
+    <div class="card-row">
+      <app-card-component id="demo-card" title="Molecule: Card" subtitle="Reusable surface component">
+        This card is ready to be reused in game, stats, and settings views.
+      </app-card-component>
+    </div>
   </div>
 </ion-content>

@@ -1,0 +1,13 @@
+:host {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.app-icon {
+  font-size: 22px;
+}
+
+.app-icon--clickable {
+  cursor: pointer;
+}

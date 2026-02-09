@@ -1,0 +1,17 @@
+<ion-button
+  class="app-button"
+  [class.app-button--secondary]="variant() === 'secondary'"
+  [id]="id()"
+  [attr.aria-label]="arialLabel()"
+  [color]="color"
+  [fill]="fill"
+  [disabled]="disabled()"
+  [expand]="expand()"
+  [type]="type()"
+  [size]="size()"
+  (click)="onClick.emit($event)"
+>
+  @if(leftIcon()) {}
+  {{label()}}
+  @if(rigthIcon()) {}
+</ion-button>
