@@ -1,0 +1,9 @@
+<label
+  class="app-label"
+  [id]="id()"
+  [attr.data-testid]="id()"
+  [attr.for]="forId() || null"
+  [ngClass]="'app-label--' + align()"
+>
+  {{ content() }}
+</label>

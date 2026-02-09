@@ -1,0 +1,8 @@
+<p
+  class="app-text"
+  [id]="id()"
+  [attr.data-testid]="id()"
+  [ngClass]="['app-text--' + align(), muted() ? 'app-text--muted' : '']"
+>
+  {{ content() }}
+</p>

@@ -1,0 +1,32 @@
+@switch (level()) {
+  @case (1) {
+    <h1
+      class="app-title"
+      [id]="id()"
+      [attr.data-testid]="id()"
+      [ngClass]="'app-title--' + align()"
+    >
+      {{ content() }}
+    </h1>
+  }
+  @case (3) {
+    <h3
+      class="app-title"
+      [id]="id()"
+      [attr.data-testid]="id()"
+      [ngClass]="'app-title--' + align()"
+    >
+      {{ content() }}
+    </h3>
+  }
+  @default {
+    <h2
+      class="app-title"
+      [id]="id()"
+      [attr.data-testid]="id()"
+      [ngClass]="'app-title--' + align()"
+    >
+      {{ content() }}
+    </h2>
+  }
+}

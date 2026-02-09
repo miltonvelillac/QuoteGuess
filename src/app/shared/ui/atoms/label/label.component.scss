@@ -1,0 +1,24 @@
+:host {
+  display: block;
+}
+
+.app-label {
+  display: inline-block;
+  color: #9bb2d8;
+  font-size: 0.85rem;
+  font-weight: 600;
+  letter-spacing: 0.08em;
+  text-transform: uppercase;
+}
+
+.app-label--left {
+  text-align: left;
+}
+
+.app-label--center {
+  text-align: center;
+}
+
+.app-label--right {
+  text-align: right;
+}

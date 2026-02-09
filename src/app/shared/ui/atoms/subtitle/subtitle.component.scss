@@ -1,0 +1,22 @@
+:host {
+  display: block;
+}
+
+.app-subtitle {
+  margin: 0;
+  color: #8ca0c2;
+  font-size: 1rem;
+  font-weight: 500;
+}
+
+.app-subtitle--left {
+  text-align: left;
+}
+
+.app-subtitle--center {
+  text-align: center;
+}
+
+.app-subtitle--right {
+  text-align: right;
+}
