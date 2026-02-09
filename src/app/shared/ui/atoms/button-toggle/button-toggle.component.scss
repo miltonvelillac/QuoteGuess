@@ -1,0 +1,16 @@
+:host {
+  display: inline-block;
+}
+
+.app-button-toggle {
+  --border-radius: 12px;
+  --padding-top: 10px;
+  --padding-bottom: 10px;
+  min-width: 92px;
+  font-weight: 600;
+  text-transform: none;
+}
+
+.app-button-toggle--active {
+  --border-width: 0;
+}

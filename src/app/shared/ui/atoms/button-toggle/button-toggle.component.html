@@ -1,0 +1,15 @@
+<ion-button
+  class="app-button-toggle"
+  [class.app-button-toggle--active]="value"
+  [id]="id()"
+  [attr.data-testid]="id()"
+  [attr.aria-label]="ariaLabel()"
+  [fill]="fill"
+  [color]="color"
+  [disabled]="disabled()"
+  [size]="size()"
+  type="button"
+  (click)="onToggle()"
+>
+  {{ label }}
+</ion-button>

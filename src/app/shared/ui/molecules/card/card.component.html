@@ -1,6 +1,7 @@
 <ion-card
   class="app-card"
   [id]="id()"
+  [attr.data-testid]="id()"
   [class.app-card--clickable]="clickable()"
   (click)="onCardClick($event)"
 >
