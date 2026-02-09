@@ -5,6 +5,7 @@ import { IconComponent } from '../../shared/ui/atoms/icon';
 import { CardComponent } from '../../shared/ui/molecules/card';
 import { SelectComponent, SelectOption } from '../../shared/ui/molecules/select';
 import { InputComponent } from 'src/app/shared/ui/atoms/input';
+import { InputPasswordComponentComponent } from 'src/app/shared/ui/atoms/input-password/input-password.component.component';
 
 @Component({
   selector: 'app-home',
@@ -20,6 +21,7 @@ import { InputComponent } from 'src/app/shared/ui/atoms/input';
     CardComponent,
     SelectComponent,
     InputComponent,
+    InputPasswordComponentComponent
   ],
 })
 export class HomePage {

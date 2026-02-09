@@ -1,24 +1,24 @@
-    <ion-item>
-      <ion-input
-        [id]="id()"
-        [name]="name()"
-        [formControl]="formField()"
-        [autocomplete]="autocomplete()"
-        [label]="label()"
-        [placeholder]="placeholder()"
-        [type]="type()"
-        [readonly]="readonly()"
-        [clearInput]="clearInput()"
-        [helperText]="helperText()"
-        [errorText]="errorText()"
-        [counter]="counter()"
-        [maxlength]="maxlength()"
-        [counterFormatter]="customCounterFormatter"
-        [autofocus]="autoFocus()"
-        [color]="color()"
+<ion-item>
+  <ion-input
+    [id]="id()"
+    [name]="name()"
+    [formControl]="formField()"
+    [autocomplete]="autocomplete()"
+    [label]="label()"
+    [placeholder]="placeholder()"
+    [type]="type()"
+    [readonly]="readonly()"
+    [clearInput]="clearInput()"
+    [helperText]="helperText()"
+    [errorText]="errorText()"
+    [counter]="counter()"
+    [maxlength]="maxlength()"
+    [counterFormatter]="customCounterFormatter"
+    [autofocus]="autoFocus()"
+    [color]="color()"
 
-        (blur)="onBlur()"
-        (keydown.enter)="onEnter.emit()"
-        >
-      </ion-input>
-    </ion-item>
+    (blur)="onBlur()"
+    (keydown.enter)="onEnter.emit()"
+    >
+  </ion-input>
+</ion-item>
