@@ -1,0 +1,80 @@
+:host {
+  display: block;
+}
+
+.app-input {
+  display: grid;
+  gap: 8px;
+}
+
+.app-input__label {
+  color: #9bb2d8;
+  font-size: 0.8rem;
+  font-weight: 600;
+  letter-spacing: 0.08em;
+  text-transform: uppercase;
+}
+
+.app-input__field {
+  width: 100%;
+  border: 1px solid rgba(116, 141, 187, 0.35);
+  border-radius: 12px;
+  background: #0a1b39;
+  color: #eaf1ff;
+  padding: 10px 12px;
+  outline: none;
+}
+
+.app-input__field-wrapper {
+  position: relative;
+}
+
+.app-input__field-wrapper .app-input__field {
+  padding-right: 38px;
+}
+
+.app-input__clear-button {
+  position: absolute;
+  right: 8px;
+  top: 50%;
+  transform: translateY(-50%);
+  width: 24px;
+  height: 24px;
+  border: 0;
+  border-radius: 999px;
+  background: rgba(136, 158, 197, 0.22);
+  color: #dce8ff;
+  font-size: 13px;
+  line-height: 24px;
+}
+
+.app-input__clear-button:hover {
+  background: rgba(136, 158, 197, 0.38);
+}
+
+.app-input__field::placeholder {
+  color: #7f93ba;
+}
+
+.app-input__field:focus {
+  border-color: rgba(78, 147, 255, 0.85);
+  box-shadow: 0 0 0 2px rgba(78, 147, 255, 0.2);
+}
+
+.app-input__hint {
+  color: #8ca0c2;
+  font-size: 0.8rem;
+}
+
+.app-input__error {
+  color: #ff8f8f;
+  font-size: 0.8rem;
+}
+
+.app-input--disabled .app-input__field {
+  opacity: 0.65;
+}
+
+.app-input--error .app-input__field {
+  border-color: rgba(255, 143, 143, 0.75);
+}
