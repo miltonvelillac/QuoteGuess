@@ -1,0 +1,11 @@
+<div class="guess-phrase" [id]="id()">
+  @for (option of optionsState(); track option.id) {
+    <app-option-select
+      [id]="id() + '__' + option.id"
+      [label]="option.label"
+      [optionLabel]="option.optionLabel ?? ''"
+      [status]="option.status"
+      (onClick)="onOptionClick(option.id)"
+    />
+  }
+</div>

@@ -1,13 +1,7 @@
 import { ChangeDetectionStrategy, Component, computed, input, output } from '@angular/core';
 import { IconsEnum } from 'src/app/core/enums/icons.enum';
 import { IconComponent } from '../icon';
-
-enum OptionSelectStatusEnum {
-  none = 'none',
-  selected = 'selected',
-  success = 'success',
-  error = 'error'
-}
+import { OptionSelectStatusEnum } from 'src/app/core/enums/option-select-status.enum';
 
 @Component({
   selector: 'app-option-select',
