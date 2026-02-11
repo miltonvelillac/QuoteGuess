@@ -1,0 +1,60 @@
+.container {
+    background-color: var(--background-element);
+    display: flex;
+    gap: 0.5rem;
+    justify-content: space-between;
+    align-items: center;
+    width: 100%;
+    padding: 0.5rem 1rem;
+    border: 2px solid var(--border-element);
+    border-radius: 15px;
+    cursor: pointer;
+
+    &:hover,
+    &:focus {
+        opacity: 0.8;
+    }
+}
+
+.container--selected {
+    background-color: var(--blue-bold);
+    border-color: var(--primary);
+}
+
+.container--success {
+    background-color: var(--green-bold);
+    border-color: var(--green);
+}
+
+.container--error {
+    background-color: var(--red-bold);
+    border-color: var(--red);
+}
+
+.label {
+    font-size: 1rem;
+    text-transform: uppercase;
+}
+
+.option {
+    padding: 0.4rem;
+    border: 1px solid var(--border-element);
+    border-radius: 50%;
+}
+
+.option--selected {
+    border-color: var(--primary);
+    background-color: var(--primary);
+}
+
+.option--success {
+    padding: 0;
+    border-color: var(--success);
+    background-color: var(--success);
+}
+
+.option--error {
+    padding: 0;
+    border-color: var(--error);
+    background-color: var(--error);
+}

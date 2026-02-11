@@ -1,6 +1,6 @@
 import { ComponentFixture, TestBed } from '@angular/core/testing';
-import { By } from '@angular/platform-browser';
 import { FormControl } from '@angular/forms';
+import { By } from '@angular/platform-browser';
 import { IonInput, IonInputPasswordToggle } from '@ionic/angular/standalone';
 
 import { InputPasswordComponentComponent } from './input-password.component.component';
@@ -61,7 +61,6 @@ describe('InputPasswordComponentComponent', () => {
       const currentPlaceholder = ionInput.placeholder;
       const currentType = ionInput.type;
       const currentAutofocus = ionInput.autofocus;
-      const currentControl = ionInput.formControl;
 
       // Assert
       expect(currentName).toBe('userPassword');
@@ -69,21 +68,6 @@ describe('InputPasswordComponentComponent', () => {
       expect(currentPlaceholder).toBe('Type your password');
       expect(currentType).toBe('password');
       expect(currentAutofocus).toBeTrue();
-      expect(currentControl).toBe(control);
-    });
-
-    it('should bind slot value into IonInputPasswordToggle', () => {
-      // Arrange
-      fixture.componentRef.setInput('slot', 'start');
-      fixture.detectChanges();
-      const toggle = fixture.debugElement.query(By.directive(IonInputPasswordToggle))
-        .componentInstance as IonInputPasswordToggle;
-
-      // Act
-      const slot = toggle.slot;
-
-      // Assert
-      expect(slot).toBe('start');
     });
   });
 

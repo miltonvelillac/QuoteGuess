@@ -1,0 +1,23 @@
+<button
+  [id]="id()"
+  class="container"
+  [class.container--selected]="isSelected()"
+  [class.container--success]="isSuccess()"
+  [class.container--error]="isError()"
+  (click)="onClick.emit()"
+>
+  <span [id]="id() + '__Label'" class="label">{{label()}}</span>
+  <div
+    [id]="id() + '__label'"
+    class="option"
+    [class.option--selected]="isSelected()"
+    [class.option--success]="isSuccess()"
+    [class.option--error]="isError()"
+  >
+    @if(icon()) {
+      <app-icon-component [id]="id() + '__Icon'" [name]="icon()" />
+    } @else {
+      {{optionLabel()}}
+    }
+  </div>
+</button>

@@ -1,7 +1,7 @@
 import { Component } from '@angular/core';
 import { IonApp, IonRouterOutlet } from '@ionic/angular/standalone';
 import { addIcons } from 'ionicons';
-import { checkmarkCircle, chevronExpandOutline, logoIonic, person, settings, star } from 'ionicons/icons';
+import { checkmark, checkmarkCircle, chevronExpandOutline, close, person, settings, star } from 'ionicons/icons';
 
 @Component({
   selector: 'app-root',
@@ -20,8 +20,10 @@ export class AppComponent {
      * referenced by name anywhere in your application.
      */
     addIcons({
+      checkmark,
       chevronExpandOutline,
       checkmarkCircle,
+      close,
       star,
       settings,
       person

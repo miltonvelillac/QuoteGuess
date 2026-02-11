@@ -1,3 +1,5 @@
 export enum IconsEnum {
-    chevronExpand = 'chevron-expand-outline'
+    chevronExpandOutline = 'chevron-expand-outline',
+    checkMark = 'checkmark',
+    close = 'close',
 }

@@ -35,3 +35,19 @@
 /* @import "@ionic/angular/css/palettes/dark.always.css"; */
 /* @import "@ionic/angular/css/palettes/dark.class.css"; */
 @import '@ionic/angular/css/palettes/dark.system.css';
+
+
+:root {
+    --blue: #0d7ff2;
+    --blue-bold: #12273d;
+    --green: #0eb15a;
+    --green-bold: #0e331f;
+    --red: #e00808;
+    --red-bold: #410909;
+    --gray1: #777575;
+    --background-element: var(--ion-card-background);
+    --border-element: var(--gray1);
+    --error: var(--red);
+    --primary: var(--blue);
+    --success: var(--green);
+}
